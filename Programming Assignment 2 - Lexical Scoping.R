@@ -1,3 +1,7 @@
+# ------------------------------------------------------------------------------
+# last update: 20220415.2239
+# ------------------------------------------------------------------------------
+
 # Example: Caching the Mean of a Vector
 
 # In this example we introduce the <<- operator which can be used to assign a value
