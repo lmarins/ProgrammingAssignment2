@@ -1,50 +1,49 @@
 # ------------------------------------------------------------------------------
 # last update: 20220426.2220
 # ------------------------------------------------------------------------------
-
-install.packages("matlab")
+## install.packages("matlab") # nolint
 library(matlib)
 
-a1 <- c(2,-2,-5)
-a2 <- c(0,3,5)
-a3 <- c(1,4,6)
-myInvMatrix <- cbind(a1,a2,a3)
+a1 <- c(2,-2,-5) # nolint
+a2 <- c(0,3,5) # nolint
+a3 <- c(1, 4, 6)
+myInvMatrix <- cbind(a1, a2, a3) # nolint
 myInvMatrix
 
-# inv() function is a built-in function in R which is especially used to find the inverse of a matrix.
+# inv() function is a built-in function in R which is especially used to find the inverse of a matrix. # nolint
 inv(myInvMatrix)
 
-# Calculate the determinant of a matrix in R, use the det() function. 
-1/det(myInvMatrix)*adjoint(myInvMatrix)
+# Calculate the determinant of a matrix in R, use the det() function.  # nolint
+1/det(myInvMatrix)*adjoint(myInvMatrix) # nolint
 
 #To transpose a matrix in R, use the t() method.
 tm <- t(myInvMatrix)
 tm
 
-#------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------ # nolint
 # R program to illustrate
 # solve function
   
-# Create 3 different vectors 
-# using combine method. 
-a1 <- c(3, 2, 5) 
-a2 <- c(2, 3, 2) 
-a3 <- c(5, 2, 4) 
+# Create 3 different vectors  # nolint
+# using combine method.  # nolint
+a1 <- c(3, 2, 5)  # nolint
+a2 <- c(2, 3, 2)  # nolint
+a3 <- c(5, 2, 4)  # nolint
     
-# bind the three vectors into a matrix  
-# using rbind() which is basically 
+# bind the three vectors into a matrix   # nolint
+# using rbind() which is basically  # nolint # nolint
 # row-wise binding
-A <- rbind(a1, a2, a3) 
+A <- rbind(a1, a2, a3)  # nolint
     
-# print the original matrix 
-print(A) 
+# print the original matrix  # nolint
+print(A)  # nolint # nolint
     
-# Use the solve() function  
+# Use the solve() function   # nolint # nolint
 # to calculate the inverse
-T1 <- solve(A) 
+T1 <- solve(A)  # nolint
     
 # print the inverse of the matrix
-print(T1) 
+print(T1)  # nolint
 
-T2 <- t(T1)
+T2 <- t(T1) # nolint
 inv(T2)
