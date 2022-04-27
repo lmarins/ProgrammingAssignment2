@@ -1,10 +1,12 @@
-# ------------------------------------------------------------------------------
-# last update: 20220415.2244
-# ------------------------------------------------------------------------------
+##----------------------------------------------------------------------------------------------------------------- # nolint
+## last update: 20220426.2220
+##----------------------------------------------------------------------------------------------------------------- # nolint
 
 ##----------------------------------------------------------------------------------------------------------------- # nolint
-## makeCacheMatrix
-## 
+## Name         : makeCacheMatrix
+## Description  : Return a matrix that is the inverse of 'x'                                                        # nolint
+## Date         : 20220415.2244                                                                                     # nolint
+## Date Update  : 20220426.2220
 ##----------------------------------------------------------------------------------------------------------------- # nolint
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -24,9 +26,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ##----------------------------------------------------------------------------------------------------------------- # nolint
-## cacheSolve
-## Return a matrix that is the inverse of 'x' ## nolint
-## solve: This generic function solves the equation a %*% x = b for x, where b can be either a vector or a matrix.
+## Name         : cacheSolve
+## Description  : Return a matrix that is the inverse of 'x'                                                        # nolint
+## Date         : 20220415.2244                                                                                     # nolint
+## Date Update  : 20220426.2220
 ##----------------------------------------------------------------------------------------------------------------- # nolint
 cacheSolve <- function(x, ...) { 
         m <- x$getSolve()
@@ -41,9 +44,9 @@ cacheSolve <- function(x, ...) {
 }
 
 
-cc1 <- c(1,3,5) 
-cc2 <- c(4,6,9) 
-cc3 <- c(2,9,1) 
+cc1 <- c(3, 2, 5) 
+cc2 <- c(2, 3, 2) 
+cc3 <- c(5, 2, 4) 
 
 cc <- rbind(cc1, cc2, cc3)
 cc
