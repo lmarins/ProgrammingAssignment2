@@ -2,7 +2,7 @@
 ## Name         : makeCacheMatrix
 ## Description  : Creates a special matrix object that can cache its inverse
 ## Date         : 20220415.2244
-## Date Update  : 20220426.2220
+## Date Update  : 20220519.2133
 ##----------------------------------------------------------------------------
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -28,7 +28,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ##              calculated (and the matrix has not changed), then the
 ##              cachesolve should retrieve the inverse from the cache
 ## Date       : 20220415.2244
-## Date Update: 20220426.2220
+## Date Update  : 20220519.2133
 ##----------------------------------------------------------------------------
 cacheSolve <- function(x, ...) { # nolint
         m <- x$getSolve()

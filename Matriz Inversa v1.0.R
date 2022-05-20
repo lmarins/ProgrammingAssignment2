@@ -47,3 +47,22 @@ print(T1)  # nolint
 
 T2 <- t(T1) # nolint
 inv(T2)
+
+
+---------
+cc4 <- c(2, 1, 3)
+cc5 <- c(3, 2, 3)
+cc6 <- c(7, 8, 2)
+cc2 <- rbind(cc4, cc5, cc6)
+print(cc2)
+
+
+# Use the solve() function   # nolint # nolint
+# to calculate the inverse
+T1 <- solve(cc2)  # nolint
+    
+# print the inverse of the matrix
+print(T1)  # nolint
+
+T2 <- t(T1) # nolint
+inv(T2)
