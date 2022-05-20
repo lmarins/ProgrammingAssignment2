@@ -60,10 +60,10 @@ print(cc2)
 
 myMatrix <- makeCacheMatrix(cc) 
 myMatrix$getSolve()
-myMatrix$set(cc2)
+myMatrix$set(cc)
 cacheSolve(myMatrix)
 
-myMatrix <- makeCacheMatrix(cc) 
+myMatrix <- makeCacheMatrix(cc2) 
 myMatrix$getSolve()
 myMatrix$set(cc2)
 cacheSolve(myMatrix)
